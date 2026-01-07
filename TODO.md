@@ -1,11 +1,3 @@
----
-title: 后端技术待办事项
-date: 2025-12-15
-author: Eugen
-tags:
-  - TODO
-  - 技术规划
----
 * [ ] Kestrel
 * [ ] openssl各个版本和TLS各个版本的解析，以及当前SSL的各种规则
 * [ ] .net core webapi的管道、生命周期、中间件等的流程和流式处理、AOP等///.net core中Config和ConfigService的每一个步骤都干了什么，管道是怎么走的
