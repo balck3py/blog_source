@@ -9,63 +9,53 @@ This is a **personal technical knowledge base** (技术知识库) containing tec
 ## Directory Structure
 
 ```
-00.技术积累/
 ├── 01.后端/       # Backend (.NET Core focus): GC, threading, memory, concurrency
-├── 02.前端/       # Frontend (currently empty)
-├── 03.DevOps/     # DevOps: K9s, Docker, Ubuntu
-├── 04.通用/       # General topics (currently empty)
-├── 05.AI/         # AI topics (currently empty)
+├── 02.前端/       # Frontend: WebAssembly
+├── 03.DevOps/     # DevOps: K9s, kubectx, Docker, Ubuntu, Git, Nginx, Dockerfile
+├── 04.通用/       # General topics: Mihomo proxy
+├── 05.AI/         # AI topics: Claude Code skills
+├── 06.Other/      # Miscellaneous
 ├── 00.assets/     # Images for embedding in articles
 ├── rule.md        # Documentation writing standards (MUST READ before creating content)
-├── TOTO.md        # Planned future topics
-└── GEMINI.md      # Directory overview
+├── TODO.md        # Planned future topics
+└── _index.md      # Homepage with author CV
 ```
 
-## Content Creation Requirements
+### File Naming
+- Format: `[序号]. [Title].md` (e.g., `05. Dot Net中的锁和并发控制.md`)
+- Use two-digit sequence numbers (01, 02, 03...)
 
-**Before creating or editing any documentation**, read `rule.md` for the complete formatting guide. Key requirements:
-
-- **YAML Frontmatter**: All documents must start with title, date, author (Eugen), and tags
-- **Language**: Chinese with English technical terms (first mention bilingual, e.g., `垃圾回收（Garbage Collection，简称 GC）`)
-- **Headings**: Use emoji icons for visual hierarchy (see rule.md §3.2 for emoji reference)
-- **Code blocks**: Must specify language (`csharp`, `bash`, `yaml`, etc.) and include Chinese comments
-- **Images**: Store in `00.assets/`, reference with Obsidian syntax: `![[../00.assets/filename.png]]`
-- **File naming**: `[序号]. [Title].md` (e.g., `01. Dot Net Core 中的 GC.md`)
-
-## Document Structure Template
-
-```markdown
+### Required YAML Frontmatter
+```yaml
 ---
-title: [文档标题]
+title: [Document title]
 date: YYYY-MM-DD
 author: Eugen
 tags:
-  - [关键词1]
-  - [关键词2]
+  - [keyword1]
+  - [keyword2]
 ---
-# 🎯 [文档主标题]
-
-> [简介/引言]
-
----
-
-## 1. 章节标题
-
-### 1.1 子章节
-
-[内容...]
-
-### 📝 小结
-
-> [章节要点总结]
-
----
-
-## 📚 总结
-
-[文档总结]
 ```
 
-## Git Workflow
+### Language and Style
+- Write in Chinese (Simplified)
+- Technical terms: Chinese with English on first use (e.g., `垃圾回收 (Garbage Collection, GC)`)
+- Use emoji icons in headings for visual hierarchy (see emoji table in `rule.md`)
+- Friendly, professional tone using "你" (not "您")
 
-The repository uses automated vault backups. Commit messages for manual changes should be descriptive of the content changes.
+### Code Blocks
+- Always specify language (`csharp`, `bash`, `yaml`, `json`, etc.)
+- Include Chinese comments explaining the code
+- Use ✅/❌ markers to show correct vs incorrect patterns
+
+### Images
+- Store in `00.assets/` directory
+- Use Obsidian wiki-link syntax: `![[../00.assets/filename.png]]`
+
+### Document Structure
+1. Frontmatter
+2. Main title with emoji (e.g., `# 🧹 GC 完全指南`)
+3. Introduction in blockquote format
+4. Optional table of contents for long documents
+5. Sections with `### 📝 小结` summaries
+6. Final `## 📚 总结` for longer articles

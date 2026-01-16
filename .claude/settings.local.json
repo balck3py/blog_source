@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"D:\\\\github\\\\blog_source\" log --oneline --all -15)",
+      "Bash(git -C \"D:\\\\github\\\\blog_source\" config --list)",
+      "Bash(git -C \"D:\\\\github\\\\blog_source\" remote -v)"
+    ]
+  }
+}
